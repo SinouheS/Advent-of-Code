@@ -1,11 +1,5 @@
 import * as fs from "fs";
 
-const MAX: GameData = {
-    red: 12,
-    green: 13,
-    blue: 14
-}
-
 function main() {
   const array = fs.readFileSync("data.txt").toString().split("\n");
 //   const array = fs.readFileSync("test1.txt").toString().split("\n");
