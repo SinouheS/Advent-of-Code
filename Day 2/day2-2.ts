@@ -2,7 +2,7 @@ import * as fs from "fs";
 
 function main() {
   const array = fs.readFileSync("data.txt").toString().split("\n");
-//   const array = fs.readFileSync("test1.txt").toString().split("\n");
+//   const array = fs.readFileSync("test.txt").toString().split("\n");
   let total = 0;
 
   for (const line of array) {
