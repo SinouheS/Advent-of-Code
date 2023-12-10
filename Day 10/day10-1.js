@@ -26,6 +26,7 @@ const OPPOSITE_DIRECTIONS = {
 function main() {
     const data = fs.readFileSync('data.txt').toString().split('\n').map((l) => l.trim());
     let loopLength = 1;
+    const startPositionCoordinates = getStartPosition(data);
     let nextPosition = findFirstPipe(startPositionCoordinates, data);
     do {
         nextPosition = findNextPosition(nextPosition, data);
