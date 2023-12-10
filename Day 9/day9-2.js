@@ -14,7 +14,7 @@ function prediction(values) {
     for (let i = 0; i < values.length - 1; ++i)
         differences.push(values[i + 1] - values[i]);
     if (differences.filter((v) => v == 0).length == differences.length) return values[0];
-    else return values[0] + prediction(differences);
+    else return values[0] - prediction(differences);
 }
 
 main();
